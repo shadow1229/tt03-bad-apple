@@ -1,6 +1,6 @@
 module freq_db ( 
-    input wire [3:0] address, 
-    input wire is_highkey, 
+    input reg [3:0] address, 
+    input reg is_highkey, 
     output wire [7:0] db_entry 
 );
     always @(*) begin
