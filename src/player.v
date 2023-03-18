@@ -35,8 +35,7 @@ module shadow1229_player(
   // simple ripple clock divider
   parameter HIGHKEY_COUNT=129;
   parameter MAX_COUNT=255;
-  always @(posedge clk or negedge clk)
-  begin
+  always @(posedge clk or negedge clk) begin
     if (reset) begin
       phrase_type <=0; 
       phrase_address <=0; 
