@@ -1,7 +1,7 @@
 module freq_db ( 
-    input reg [3:0] address, 
-    input reg is_highkey, 
-    output wire [7:0] db_entry 
+    input wire [3:0] address, 
+    input wire is_highkey, 
+    output reg [7:0] db_entry 
 );
     always @(*) begin
         if (is_highkey==0) begin

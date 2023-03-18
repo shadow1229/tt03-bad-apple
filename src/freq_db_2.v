@@ -1,6 +1,6 @@
 module freq_db_2 ( 
-    input  reg [3:0] address, 
-    output wire [7:0] db_entry 
+    input wire [3:0] address, 
+    output reg [7:0] db_entry 
 );
     always @(*) begin
         case(address)

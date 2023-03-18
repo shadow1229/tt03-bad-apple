@@ -1,8 +1,8 @@
 module phrase_db ( 
-    input reg [3:0] address, 
-    output wire [31:0] db_entry,
-    output wire [7:0] length_entry, 
-    output wire [2:0] n_note 
+    input wire [3:0] address, 
+    output reg [31:0] db_entry,
+    output reg [7:0] length_entry, 
+    output reg [2:0] n_note 
 );
     always @(*) begin
         //length entry: 0: 8th note, 1:4th note
