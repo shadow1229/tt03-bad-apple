@@ -1,6 +1,6 @@
 module phrase_id_db ( 
     input wire [7:0] address, 
-    output reg [4:0] db_entry 
+    output wire [4:0] db_entry 
 );
     always @(*) begin
         case(address)

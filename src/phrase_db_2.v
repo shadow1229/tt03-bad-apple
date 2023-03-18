@@ -1,8 +1,8 @@
 module phrase_db_2 ( 
     input wire [3:0] address, 
-    output reg [31:0] db_entry,
-    output reg [7:0] length_entry, 
-    output reg [2:0] n_note  
+    output wire [31:0] db_entry,
+    output wire [7:0] length_entry, 
+    output wire [2:0] n_note  
 );
     always @(*) begin
         //['16c#4', '16d#3', '16d#4', '16f#3', '16f#4', '16g#3', '16g#4', '16p', '16d4','16e4']
