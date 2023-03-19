@@ -42,6 +42,11 @@ module phrase_db_2 (
                 length_entry = 8'b01011000;
                 n_note = 3'b100;
             end
+            7: begin 
+                db_entry = 32'h54632400;
+                length_entry = 8'b10010000; // this will be ignored, and triplet will be used
+                n_note = 3'b101; 
+            end
         default: begin
                 db_entry = 32'h77777777;
                 length_entry = 8'b00000000;

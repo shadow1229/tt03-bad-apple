@@ -36,7 +36,7 @@ module phrase_id_db (
             29: db_entry = 5'b10000;
             30: db_entry = 5'b10000;
             31: db_entry = 5'b10000;
-            32: db_entry = 5'b10010;
+            32: db_entry = 5'b10111;
             33: db_entry = 5'b00001;
             34: db_entry = 5'b00010;
             35: db_entry = 5'b00011;
@@ -100,7 +100,7 @@ module phrase_id_db (
             93: db_entry = 5'b10000;
             94: db_entry = 5'b10000;
             95: db_entry = 5'b10000;
-            96: db_entry = 5'b10010;
+            96: db_entry = 5'b10111;
             97: db_entry = 5'b00001;
             98: db_entry = 5'b00010;
             99: db_entry = 5'b00011;

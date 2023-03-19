@@ -18,6 +18,7 @@ module shadow1229_player(
   reg [7:0] length_entry; 
   reg [2:0] n_note;   
   reg [7:0] phrase_address; //8-bit  
+  reg [4:0] phrase_id_total; // for triplet note detection
   reg [3:0] phrase_id;
   reg phrase_type;
   reg [31:0] phrase; //freq(4)*len_phrase(8)
@@ -37,9 +38,10 @@ module shadow1229_player(
   parameter MAX_COUNT=255;
   always @(posedge clk) begin
     if (reset) begin
-      phrase_type <=0; 
-      phrase_address <=0; 
+      phrase_address <=0;
+      phrase_id_total <= 0; 
       phrase_id <=0;
+      phrase_type <=0; 
       phrase <=0;
       freq_address <=0;
       freq <=0;
@@ -62,6 +64,7 @@ module shadow1229_player(
             end else begin
                 is_highkey <= 1'b1;
             end
+            phrase_id_total <= phrase_id_wire[4:0];
             phrase_id <= phrase_id_wire[3:0];
             phrase_type <= phrase_id_wire[4]; //16~18
             //phrase_id <= 4'b1000; //arbitary values
@@ -119,10 +122,14 @@ module shadow1229_player(
                 // reset tone generator
                 counter <= freq_wire_2; 
                 freq <= freq_wire_2;
-                if (length_note == 0) begin
-                    ticks[11:0] <= 12'b000101000110; //326  16th note
+                if (phrase_id_total == 5'b10111) begin
+                    ticks[11:0] <= 12'b000110110011; //435 triplet
                 end else begin
-                    ticks[11:0] <= 12'b001010001100; //652  8th note
+                    if (length_note == 0) begin
+                        ticks[11:0] <= 12'b000101000110; //326  16th note
+                    end else begin
+                        ticks[11:0] <= 12'b001010001100; //652  8th note
+                    end
                 end
               end
                           
