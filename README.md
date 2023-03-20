@@ -1,6 +1,6 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
-# TinyTapeout tt03: Bad Apple#
+# TinyTapeout tt03: Bad Apple #
 
 ## Overview ##
 This Chip design plays [Bad Apple!! by Alstroemeria Records](https://www.youtube.com/watch?v=FtutLA63Cp8) over Piezeo Speaker connected accross io_out[1:0]. (Based on [TinyTapeout tt02: Super Mario Tune on A Piezo Speaker](https://meriac.github.io/tt02-play-tune/) .)
