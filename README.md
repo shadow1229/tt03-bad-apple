@@ -1,6 +1,7 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
 # TinyTapeout tt03: Bad Apple #
+(img/bad_apple.png)
 
 ## Overview ##
 This Chip design plays [Bad Apple!! by Alstroemeria Records](https://www.youtube.com/watch?v=FtutLA63Cp8) over Piezeo Speaker connected accross io_out[1:0]. (Based on [TinyTapeout tt02: Super Mario Tune on A Piezo Speaker](https://github.com/meriac/tt02-play-tune) .)
@@ -25,6 +26,8 @@ If counter_cycle is 1, the module will read phrase data from phrase id.
 If counter_cycle is 2, the module will read id of the frequency and length of current note.
 Finally, if counter_cycle is 3, the module will read frequency and length of the note from its ids. 
 
+## Designed Chip ##
+(chip_design/chip_design_2d.png)
 
 ## Simulated Sound ##
 [https://github.com/shadow1229/tt03-bad-apple/blob/main/generator/simulation.wav](https://github.com/shadow1229/tt03-bad-apple/blob/main/generator/simulation.wav) (warning: file size is ~80MB)
