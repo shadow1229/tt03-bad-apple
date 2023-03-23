@@ -3,7 +3,7 @@
 # TinyTapeout tt03: Bad Apple #
 
 ## Overview ##
-This Chip design plays [Bad Apple!! by Alstroemeria Records](https://www.youtube.com/watch?v=FtutLA63Cp8) over Piezeo Speaker connected accross io_out[1:0]. (Based on [TinyTapeout tt02: Super Mario Tune on A Piezo Speaker](https://meriac.github.io/tt02-play-tune/) .)
+This Chip design plays [Bad Apple!! by Alstroemeria Records](https://www.youtube.com/watch?v=FtutLA63Cp8) over Piezeo Speaker connected accross io_out[1:0]. (Based on [TinyTapeout tt02: Super Mario Tune on A Piezo Speaker](https://github.com/meriac/tt02-play-tune) .)
 
 ## Data Compression ##
 Since the song is longer than 3 minutes, put every single note into TinyTapeout design wasn't able to do.
@@ -31,7 +31,7 @@ Finally, if counter_cycle is 3, the module will read frequency and length of the
 
 ## python scripts for building / testing verilog script ##
 [https://github.com/shadow1229/tt03-bad-apple/blob/main/generator](https://github.com/shadow1229/tt03-bad-apple/blob/main/generator)
-(mostly based on [TinyTapeout tt02: Super Mario Tune on A Piezo Speaker](https://meriac.github.io/tt02-play-tune/)
+(mostly based on [TinyTapeout tt02: Super Mario Tune on A Piezo Speaker](https://github.com/meriac/tt02-play-tune)
 
 ## External Hardware Required ##
 Piezo speaker connected across io_out[1:0]
