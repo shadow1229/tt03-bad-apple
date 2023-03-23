@@ -27,13 +27,11 @@ Finally, if counter_cycle is 3, the module will read frequency and length of the
 
 
 ## Simulated Sound ##
-TODO
-
-## Chip design ##
-TODO
+[https://github.com/shadow1229/tt03-bad-apple/blob/main/generator/simulation.wav](https://github.com/shadow1229/tt03-bad-apple/blob/main/generator/simulation.wav) (warning: file size is ~80MB)
 
 ## python scripts for building / testing verilog script ##
-TODO (mostly based on [TinyTapeout tt02: Super Mario Tune on A Piezo Speaker](https://meriac.github.io/tt02-play-tune/)
+[https://github.com/shadow1229/tt03-bad-apple/blob/main/generator](https://github.com/shadow1229/tt03-bad-apple/blob/main/generator)
+(mostly based on [TinyTapeout tt02: Super Mario Tune on A Piezo Speaker](https://meriac.github.io/tt02-play-tune/)
 
 ## External Hardware Required ##
 Piezo speaker connected across io_out[1:0]
