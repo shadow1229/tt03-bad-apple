@@ -38,3 +38,7 @@ Finally, if counter_cycle is 3, the module will read frequency and length of the
 
 ## External Hardware Required ##
 Piezo speaker connected across io_out[1:0]
+
+## Fabrication Result ##
+
+https://arweave.net/MCLI3o825EvwRUoGVgnB28NpFcIt-4uTeMMWMVU72Cw
