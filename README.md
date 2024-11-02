@@ -41,4 +41,4 @@ Piezo speaker connected across io_out[1:0]
 
 ## Playing with actual chip ##
 
-<video src="https://arweave.net/MCLI3o825EvwRUoGVgnB28NpFcIt-4uTeMMWMVU72Cw" width=480/>
+<video src='https://arweave.net/MCLI3o825EvwRUoGVgnB28NpFcIt-4uTeMMWMVU72Cw' width=480/>
