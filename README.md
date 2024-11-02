@@ -40,5 +40,5 @@ Finally, if counter_cycle is 3, the module will read frequency and length of the
 Piezo speaker connected across io_out[1:0]
 
 ## Playing with actual chip ##
-
-<video src='https://arweave.net/MCLI3o825EvwRUoGVgnB28NpFcIt-4uTeMMWMVU72Cw' width=480/>
+(~140MB video file on arweave)
+https://arweave.net/MCLI3o825EvwRUoGVgnB28NpFcIt-4uTeMMWMVU72Cw
